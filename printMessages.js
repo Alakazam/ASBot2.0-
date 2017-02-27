@@ -107,7 +107,8 @@ module.exports = {
         messageContent+= " | BAP: " + worksheet['G' + rows[0]].v;
       }
 
-      messageContent += " | Acc: " + worksheet['I' + rows[0]].v + " | Energy Cost: " + worksheet['J' + rows[0]].v;
+      // I don't actually know whether the * 100 works in this situation but it's the desired result (for 95% format rather than 0.95)
+      messageContent += " | Acc: " + (worksheet['I' + rows[0]].v * 100) + "% | Energy Cost: " + worksheet['J' + rows[0]].v;
 
       if(worksheet['K' + rows[0]].v != '-'){
         messageContent += " | Effect Chance: " + worksheet['K' + rows[0]].v;
