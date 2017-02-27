@@ -18,7 +18,7 @@ module.exports = {
       }
       //finish collecting information
       messageContent+= " | " + worksheet['F'+row].v + "/" + worksheet['G'+row].v + "/"
-      + worksheet['H'+row].v+ "/" + worksheet['I'+row].v+ "/" + worksheet['J'+row].v+ "/" + worksheet['K'+row].v+ "/" + worksheet['L'+row].v
+      + worksheet['H'+row].v+ "/" + worksheet['I'+row].v+ "/" + worksheet['J'+row].v+ "/" + worksheet['K'+row].v+ " | BRT: " + worksheet['L'+row].v
       + " | Size: " + worksheet['M'+row].v + " | Weight: " + worksheet['N'+row].v + " | +Spe nat. Acc Boost: " + worksheet['O'+row].v+ "% ";
 
       //print addional information for non megas
