@@ -160,6 +160,11 @@ module.exports = {
 
     return messageContent;
   }
+  printYolol: function(){
+    var messageContent = "yolol";
+
+    return messageContent;
+  }
 
 
 
