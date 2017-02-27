@@ -137,6 +137,9 @@ bot.on('message', message => {
   }else if(command === "asbhelp"){
     var messageContent = messagePrinter.printHelp();
     message.channel.sendMessage(messageContent);
+  }else if(command === "yolol"){
+    var messageContent = messagePrinter.printYolol();
+    message.channel.sendMessage(messageContent);
   }
 
 });
